@@ -11,14 +11,9 @@
 
   &__title {
     color: $black;
-    @extend %ubuntu__text;
-    font-size: 13px;
-    font-weight: 600; // 700 in Figma
-    letter-spacing: -0.03em;
+    @extend %section__title;
 
-    margin-bottom: 20px;
-
-    text-transform: uppercase;
+    margin-bottom: 12px;
 
     span {
       color: $orange__text;
@@ -27,10 +22,7 @@
 
   &__text {
     color: $grey;
-    @extend %roboto__text;
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 20px;
+    @extend %section__text;
 
     margin-bottom: 10px;
   }
@@ -52,6 +44,7 @@
   }
 
   @media only screen and (min-width: $breakpoint-tablet) {
+    padding-bottom: 0;
 
     &__image {
       margin-right: 30 * 100vw / 768;
@@ -71,17 +64,15 @@
     }
 
     &__content {
-      margin-top: 24px;
+      margin-top: 16px;
     }
 
     &__title {
-      font-size: 16px;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     &__text {
-      font-size: 14px;
-      line-height: 21px;
+      margin-bottom: 8px;
     }
   }
 
@@ -89,24 +80,23 @@
     padding-top: 85px;
 
     &__image {
-      margin-right: 125 * 100vw / 1440;
+      margin-right: 136 * 100vw / 1440;
+
+      transform: translate(6px, 8px);
 
       min-width: 344px;
       width: 344px;
     }
 
     &__content {
-      margin-top: 130px;
+      margin-top: 140px;
     }
 
     &__title {
-      font-size: 42px;
-      margin-bottom: 30px;
+      margin-bottom: 24px;
     }
 
     &__text {
-      font-size: 18px;
-      line-height: 27px;
       margin-bottom: 74px;
     }
 

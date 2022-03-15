@@ -1,18 +1,22 @@
 $breakpoint-tablet: 768px; // lg-up
 $breakpoint-desktop: 1440px; // xxl-up
 
+$padding__xs: 34 * 100vw / 320;
+$padding__lg: 114 * 100vw / 768;
+$padding__xxl: 165 * 100vw / 1440;
+
 %padding__default {
-  padding-right: 34 * 100vw / 320;
-  padding-left: 34 * 100vw / 320;
+  padding-right: $padding__xs;
+  padding-left: $padding__xs;
 
   @media only screen and (min-width: $breakpoint-tablet) {
-    padding-right: 114 * 100vw / 768;
-    padding-left: 114 * 100vw / 768;
+    padding-right: $padding__lg;
+    padding-left: $padding__lg;
   }
 
   @media only screen and (min-width: $breakpoint-desktop) {
-    padding-right: 165 * 100vw / 1440;
-    padding-left: 165 * 100vw / 1440;
+    padding-right: $padding__xxl;
+    padding-left: $padding__xxl;
   }
 }
 
@@ -22,6 +26,70 @@ $breakpoint-desktop: 1440px; // xxl-up
 
 %roboto__text {
   font-family: 'Roboto', sans-serif;
+}
+
+%section__title {
+  @extend %ubuntu__text;
+
+  font-size: 13px;
+  font-weight: 600; // 700 in Figma
+  line-height: 16px;
+  letter-spacing: -0.03em;
+
+  margin-bottom: 14px;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    font-size: 42px;
+    line-height: 50.4px;
+    margin-bottom: 30px;
+  }
+}
+
+%section__sub-title {
+  @extend %ubuntu__text;
+
+  font-size: 13px;
+  font-weight: 600; // 700 in Figma
+  line-height: 16px;
+  letter-spacing: -0.03em;
+
+  margin-bottom: 8px;
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    font-size: 16px;
+    line-height: 19.2px;
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    font-size: 32px;
+    line-height: 38.4px;
+    margin-bottom: 38.4px;
+  }
+}
+
+%section__text {
+  @extend %roboto__text;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    font-size: 18px;
+    line-height: 27px;
+  }
 }
 
 // colors

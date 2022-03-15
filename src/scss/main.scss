@@ -16,7 +16,8 @@
 @import './components/__vars';
 @import './components/__header';
 @import './components/__intro';
-@import './components/_download';
+@import './components/__download';
+@import './components/__online';
 
 html, body {
   scroll-behavior: smooth;
