@@ -1,10 +1,55 @@
 $breakpoint-tablet: 768px; // lg-up
 $breakpoint-desktop: 1440px; // xxl-up
 
+%padding__default {
+  padding-right: 34 * 100vw / 320;
+  padding-left: 34 * 100vw / 320;
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    padding-right: 114 * 100vw / 768;
+    padding-left: 114 * 100vw / 768;
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    padding-right: 165 * 100vw / 1440;
+    padding-left: 165 * 100vw / 1440;
+  }
+}
+
+%ubuntu__text {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+%roboto__text {
+  font-family: 'Roboto', sans-serif;
+}
+
+// colors
 $orange: #FFAB00;
+$orange__text: #FF9C01;
 $white: #fff;
+$black: #0E283C;
+$grey: #768C9B;
 
 $z-index: 1;
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.row--between--x {
+  justify-content: space-between;
+}
+
+.row--center--x {
+  justify-content: center;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
 
 @media only screen and (min-width: $breakpoint-tablet) {
   .is-hidden--lg-up {

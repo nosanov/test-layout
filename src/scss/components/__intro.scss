@@ -1,6 +1,8 @@
 .intro {
   background: linear-gradient(180deg, $orange -182.82%, $orange -100.25%, $orange 54.78%, $orange 95.73%);
-  padding: 12px calc(34 * 100vw / 320);
+  @extend %padding__default;
+  padding-top: 12px;
+  padding-bottom: 12px;
   position: relative;
   // padding: 12px 34px;
 

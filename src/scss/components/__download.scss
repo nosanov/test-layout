@@ -1,0 +1,121 @@
+.download {
+  background: $white;
+
+  @extend %padding__default;
+  padding-top: 30px;
+  padding-bottom: 38px;
+
+  &__container {
+    position: relative;
+  }
+
+  &__title {
+    color: $black;
+    @extend %ubuntu__text;
+    font-size: 13px;
+    font-weight: 600; // 700 in Figma
+    letter-spacing: -0.03em;
+
+    margin-bottom: 20px;
+
+    text-transform: uppercase;
+
+    span {
+      color: $orange__text;
+    }
+  }
+
+  &__text {
+    color: $grey;
+    @extend %roboto__text;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+
+    margin-bottom: 10px;
+  }
+
+  &__button {
+    display: block;
+
+    width: 118px;
+
+    &:first-child {
+      margin-right: 20px;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+
+    &__image {
+      margin-right: 30 * 100vw / 768;
+
+      position: relative;
+      z-index: $z-index + 1;
+
+      min-width: 160px;
+      width: 160px;
+
+      picture,
+      img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    &__content {
+      margin-top: 24px;
+    }
+
+    &__title {
+      font-size: 16px;
+      margin-bottom: 12px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    padding-top: 85px;
+
+    &__image {
+      margin-right: 125 * 100vw / 1440;
+
+      min-width: 344px;
+      width: 344px;
+    }
+
+    &__content {
+      margin-top: 130px;
+    }
+
+    &__title {
+      font-size: 42px;
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      font-size: 18px;
+      line-height: 27px;
+      margin-bottom: 74px;
+    }
+
+    &__button {
+      width: 216px;
+
+      &:first-child {
+        margin-right: 24px;
+      }
+    }
+  }
+}

@@ -13,7 +13,9 @@
     justify-content: center;
     align-items: center;
 
-    padding: 14px calc(34 * 100vw / 320) 0;
+    @extend %padding__default;
+    padding-top: 14px;
+    padding-bottom: 0;
     // padding: 14px 34px 0;
   }
 
@@ -61,9 +63,7 @@
   @media only screen and (min-width: $breakpoint-tablet) {
     &__container {
       justify-content: space-between;
-      padding: 14px calc(114 * 100vw / 768) 0;
     }
-
     &__deco {
       min-width: 48px;
       width: 48px;
