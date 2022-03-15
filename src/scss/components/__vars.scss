@@ -1,0 +1,31 @@
+$breakpoint-tablet: 768px; // lg-up
+$breakpoint-desktop: 1440px; // xxl-up
+
+$orange: #FFAB00;
+$white: #fff;
+
+$z-index: 1;
+
+@media only screen and (min-width: $breakpoint-tablet) {
+  .is-hidden--lg-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (min-width: $breakpoint-desktop) {
+  .is-hidden--xxl-up {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-tablet - 1) {
+  .is-hidden--lg-down {
+    display: none !important;
+  }
+}
+
+@media only screen and (max-width: $breakpoint-desktop - 1) {
+  .is-hidden--xxl-down {
+    display: none !important;
+  }
+}

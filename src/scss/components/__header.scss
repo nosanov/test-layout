@@ -1,0 +1,204 @@
+.header {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: $z-index + 2;
+
+  width: 100%;
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    padding: 14px calc(34 * 100vw / 320) 0;
+    // padding: 14px 34px 0;
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__deco {
+    background: $white;
+    border-radius: 50%;
+
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+  }
+
+  &__icon {
+    display: block;
+    margin-left: 34 * 100vw / 320;
+
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+
+    &__phone,
+    &__email {
+      span {
+        display: none;
+      }
+    }
+
+    &__button {
+      svg path {
+        fill: $white;
+      }
+
+      span {
+        display: none;
+      }
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-tablet) {
+    &__container {
+      justify-content: space-between;
+      padding: 14px calc(114 * 100vw / 768) 0;
+    }
+
+    &__deco {
+      min-width: 48px;
+      width: 48px;
+      height: 48px;
+    }
+
+    &__icon {
+      margin-left: 15 * 100vw / 768;
+
+      &__button--lg-up {
+        background: $white;
+        border: 1px solid $white;
+        border-radius: 100px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding: 8px 25px;
+        transition: background .3s ease-out;
+
+        width: auto;
+        height: 48px;
+
+        svg path {
+          fill: $orange;
+          transition: fill .3s ease-out;
+        }
+
+        span {
+          color: $orange;
+          display: block;
+
+          font-size: 18px;
+          font-weight: 700;
+
+          margin-left: 10px;
+          transition: color .3s ease-out;
+        }
+
+        &:hover {
+          background: transparent;
+
+          svg path {
+            fill: $white;
+          }
+
+          span {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    &__container {
+      padding: 14px calc(165 * 100vw / 1440) 0;
+    }
+
+    &__deco {
+      min-width: 42px;
+      width: 42px;
+      height: 42px;
+    }
+
+    &__icon {
+      display: flex;
+      align-items: center;
+
+      margin-left: 30 * 100vw / 1440;
+      width: auto;
+
+      &__phone,
+      &__email {
+        span {
+          color: $white;
+          display: inline-block;
+
+          font-size: 16px;
+          font-weight: 700;
+
+          margin-left: 5px;
+          white-space: nowrap;
+        }
+      }
+
+      &__button--lg-up {
+        margin-left: 10 * 100vw / 1440;
+      }
+
+      &__button--xxl-up {
+        background: $white;
+        border: 1px solid $white;
+        border-radius: 100px;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        margin-left: 98 * 100vw / 1440;
+        padding: 8px 25px;
+        transition: background .3s ease-out;
+
+        width: auto;
+        height: 48px;
+
+        svg path {
+          fill: $orange;
+          transition: fill .3s ease-out;
+        }
+
+        span {
+          color: $orange;
+          display: block;
+
+          font-size: 18px;
+          font-weight: 700;
+
+          margin-left: 10px;
+          transition: color .3s ease-out;
+        }
+
+        &:hover {
+          background: transparent;
+
+          svg path {
+            fill: $white;
+          }
+
+          span {
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}

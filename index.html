@@ -9,6 +9,11 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
 
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="./dist/css/libs/owl.carousel.min.css">
   <link rel="stylesheet" href="./dist/css/libs/owl.theme.default.min.css">
 
@@ -17,6 +22,94 @@
 <body>
   <div id="root">
 
+    <!-- header -->
+    <header id="header" class="header">
+      <div class="header__container">
+        <div class="header__deco"></div>
+        <div class="header__links">
+          <a class="header__icon header__icon__phone" href="tel:+79770000000">
+            <img src="./assets/icons/phone.svg" alt="Позвонить">
+            <span>+7 977 000-00-00</span>
+          </a>
+          <a class="header__icon header__icon__email" href="mailto:support@mail.ru">
+            <img src="./assets/icons/email.svg" alt="Отправить сообщение на почту">
+            <span>support@mail.ru</span>
+          </a>
+          <a class="header__icon header__icon__button header__icon__button--xxl-up" href="#login">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3" d="M7 19H13V5H7V19ZM10 11H12V13H10V11Z" fill="white"/>
+              <path d="M19 19V4H15V3H5V19H3V21H15V6H17V21H21V19H19ZM13 19H7V5H13V19ZM10 11H12V13H10V11Z" fill="white"/>
+            </svg>
+            <span>Войти</span>
+          </a>
+          <a class="header__icon header__icon__button header__icon__button--lg-up" href="#sign-up">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path opacity="0.3" d="M8 15C5.3 15 2.2 16.29 2 17.01V18H14V17C13.8 16.29 10.7 15 8 15Z" fill="white"/>
+              <path opacity="0.3" d="M8 10C9.10457 10 10 9.10457 10 8C10 6.89543 9.10457 6 8 6C6.89543 6 6 6.89543 6 8C6 9.10457 6.89543 10 8 10Z" fill="white"/>
+              <path d="M22 9V7H20V9H18V11H20V13H22V11H24V9H22Z" fill="white"/>
+              <path d="M8 12C10.21 12 12 10.21 12 8C12 5.79 10.21 4 8 4C5.79 4 4 5.79 4 8C4 10.21 5.79 12 8 12ZM8 6C9.1 6 10 6.9 10 8C10 9.1 9.1 10 8 10C6.9 10 6 9.1 6 8C6 6.9 6.9 6 8 6Z" fill="white"/>
+              <path d="M8 13C5.33 13 0 14.34 0 17V20H16V17C16 14.34 10.67 13 8 13ZM14 18H2V17.01C2.2 16.29 5.3 15 8 15C10.7 15 13.8 16.29 14 17V18Z" fill="white"/>
+              <path d="M12.51 4.05005C13.43 5.11005 14 6.49005 14 8.00005C14 9.51005 13.43 10.89 12.51 11.95C14.47 11.7 16 10.04 16 8.00005C16 5.96005 14.47 4.30005 12.51 4.05005Z" fill="white"/>
+              <path d="M16.53 13.83C17.42 14.66 18 15.7 18 17V20H20V17C20 15.55 18.41 14.49 16.53 13.83Z" fill="white"/>
+            </svg>
+            <span>Стать партнером</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- intro section -->
+      <section class="intro">
+        <div class="intro__container">
+          <div class="intro__image">
+            <picture class="intro__image__phone">
+              <source srcset="./assets/images/intro/phone-xs.png, ./assets/images/intro/phone-xs-retina.png 2x" media="(max-width: 767px)">
+              <source srcset="./assets/images/intro/phone-lg.png, ./assets/images/intro/phone-lg-retina.png 2x" media="(max-width: 1439px)">
+              <source srcset="./assets/images/intro/phone-xxl.png, ./assets/images/intro/phone-xxl-retina.png 2x" media="(min-width: 1440px)">
+              <img src="./assets/images/intro/phone-xxl.png, ./assets/images/intro/phone-xxl-retina.png 2x" alt="Заказ">
+            </picture>
+
+            <div class="intro__image__deco__el intro__image__deco__white-0 is-hidden--lg-down"></div>
+            <img class="intro__image__deco__el intro__image__deco__lilac-0 is-hidden--lg-down" src="./assets/images/intro/deco/lilac-0.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__lilac-1 is-hidden--lg-down" src="./assets/images/intro/deco/lilac-1.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__lilac-2 is-hidden--lg-down is-hidden--xxl-up" src="./assets/images/intro/deco/lilac-2.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__lilac-2 is-hidden--xxl-down" src="./assets/images/intro/deco/lilac-2--xxl.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__lilac-3 is-hidden--lg-down" src="./assets/images/intro/deco/lilac-3.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__lilac-4 is-hidden--lg-down" src="./assets/images/intro/deco/lilac-4.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__pink-0 is-hidden--lg-down" src="./assets/images/intro/deco/pink-0.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__pink-1 is-hidden--lg-down" src="./assets/images/intro/deco/pink-1.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__pink-2 is-hidden--lg-down" src="./assets/images/intro/deco/pink-2.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__pink-3 is-hidden--lg-down" src="./assets/images/intro/deco/pink-3.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__red-0 is-hidden--lg-down" src="./assets/images/intro/deco/red-0.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__red-1 is-hidden--lg-down" src="./assets/images/intro/deco/red-1.svg" alt="deco image">
+            <img class="intro__image__deco__el intro__image__deco__red-2 is-hidden--lg-down" src="./assets/images/intro/deco/red-2.svg" alt="deco image">
+            <div class="intro__image__deco__el intro__image__deco__blue-0 is-hidden--lg-down">
+              <img class="intro__image__deco__el__round" src="./assets/images/intro/deco/blue-0.svg" alt="deco image">
+              <img class="intro__image__deco__el__arrow" src="./assets/icons/arrow-down.svg" alt="arrow">
+            </div>
+          </div>
+
+          <div class="intro__socials">
+            <a class="intro__socials__icon" href="#instagram">
+              <img src="./assets/icons/instagram.svg" alt="instagram">
+            </a>
+            <a class="intro__socials__icon" href="#vk">
+              <img src="./assets/icons/vk.svg" alt="vk">
+            </a>
+            <a class="intro__socials__icon" href="#facebook">
+              <img src="./assets/icons/facebook.svg" alt="facebook">
+            </a>
+          </div>
+        </div>
+
+        <picture class="intro__background is-hidden--lg-down">
+          <source srcset="./assets/images/intro/background-lg.png, ./assets/images/intro/background-lg-retina.png 2x" media="(max-width: 1439px)">
+          <source srcset="./assets/images/intro/background-xxl.png, ./assets/images/intro/background-xxl-retina.png 2x" media="(min-width: 1440px)">
+          <img src="./assets/images/intro/background-xxl.png, ./assets/images/intro/background-xxl-retina.png 2x" alt="background">
+        </picture>
+      </section>
+    </main>
   </div>
 
   <script src="./dist/js/libs/jquery.min.js" defer></script>

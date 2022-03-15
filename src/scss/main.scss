@@ -2,7 +2,7 @@
   box-sizing: border-box;
   box-shadow: none;
 
-  // font-family: 'Manrope', sans-serif;
+  font-family: 'Roboto', 'Ubuntu', sans-serif;
 
   list-style: none;
 
@@ -13,7 +13,9 @@
   text-decoration: none;
 }
 
-// @import './vars/__vars';
+@import './components/__vars';
+@import './components/__header';
+@import './components/__intro';
 
 html, body {
   scroll-behavior: smooth;
