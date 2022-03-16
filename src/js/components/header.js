@@ -16,10 +16,16 @@ function initHeader() {
                 header.classList.remove('header--collapsed');
             }
             prev_scroll_position = last_known_scroll_position;
+
             if (last_known_scroll_position < offset) {
                 header.classList.add('header--transparent');
             } else {
                 header.classList.remove('header--transparent');
+            }
+
+            // Safari fix
+            if (last_known_scroll_position <= 0) {
+                header.classList.remove('header--collapsed');
             }
         }
     }

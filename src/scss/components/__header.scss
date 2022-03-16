@@ -37,9 +37,10 @@
     align-items: center;
   }
 
-  &__deco {
-    background: $white;
+  &__logo {
+    // background: $white;
     border-radius: 50%;
+    display: block;
 
     min-width: 24px;
     width: 24px;
@@ -76,7 +77,7 @@
     &__container {
       justify-content: space-between;
     }
-    &__deco {
+    &__logo {
       min-width: 48px;
       width: 48px;
       height: 48px;
@@ -132,7 +133,7 @@
   }
 
   @media only screen and (min-width: $breakpoint-desktop) {
-    &__deco {
+    &__logo {
       min-width: 42px;
       width: 42px;
       height: 42px;
