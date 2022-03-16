@@ -139,6 +139,10 @@
 
       &__phone,
       &__email {
+        svg path {
+          transition: fill .3s ease-out;
+        }
+
         span {
           color: $white;
           display: inline-block;
@@ -147,7 +151,18 @@
           font-weight: 700;
 
           margin-left: 5px;
+          transition: color .3s ease-out;
           white-space: nowrap;
+        }
+
+        &:hover {
+          svg path {
+            fill: $grey;
+          }
+
+          span {
+            color: $grey;
+          }
         }
       }
 

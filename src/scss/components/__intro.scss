@@ -15,6 +15,7 @@
     margin: 0 auto;
     position: relative;
     max-width: 254px;
+    width: 100%;
 
     &__phone {
       display: block;
@@ -28,6 +29,7 @@
       img {
         display: block;
         width: 100%;
+        height: auto;
       }
     }
   }
@@ -334,6 +336,17 @@
     &__socials {
       top: 144px;
       transform: none;
+
+      &__icon {
+        svg path {
+          transition: fill .3s ease-out;
+        }
+        &:hover {
+          svg path {
+            fill: $grey;
+          }
+        }
+      }
     }
 
     &__background {
