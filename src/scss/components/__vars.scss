@@ -74,6 +74,23 @@ $padding__xxl: 165 * 100vw / 1440;
   }
 }
 
+%section__sub-title--xxl {
+  @extend %ubuntu__text;
+
+  font-size: 16px;
+  font-weight: 600; // 700 in Figma
+  line-height: 19.2px;
+  letter-spacing: -0.03em;
+
+  text-transform: uppercase;
+
+  @media only screen and (min-width: $breakpoint-desktop) {
+    font-size: 32px;
+    line-height: 38.4px;
+    margin-bottom: 38.4px;
+  }
+}
+
 %section__text {
   @extend %roboto__text;
 
@@ -97,6 +114,7 @@ $orange: #FFAB00;
 $orange__text: #FF9C01;
 $white: #fff;
 $black: #0E283C;
+$black__light: #4E5C66;
 $grey: #768C9B;
 
 $z-index: 1;
