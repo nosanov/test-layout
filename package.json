@@ -7,6 +7,7 @@
     "build-css": "node-sass -w --include-path scss src/scss/main.scss dist/css/main.css --output-style compressed",
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "build-js": "watchify src/js/main.js -o dist/js/main.js --debug",
+    "compress-js": "uglifyjs dist/js/main.js -o dist/js/main.min.js -c",
     "browser-sync": "browser-sync start --server --files='./*html,./dist/**/*,./assets/**/*'",
     "development": "npm run build-css & npm run build-js & npm run browser-sync"
   },
@@ -26,6 +27,7 @@
     "nodemon": "^2.0.15",
     "owl.carousel": "^2.3.4",
     "splitting": "^1.0.6",
+    "uglify-js": "^3.15.3",
     "watchify": "^4.0.0"
   },
   "browserify": {

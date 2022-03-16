@@ -1,11 +1,23 @@
 .header {
-  position: absolute;
+  background: $orange;
+
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
   z-index: $z-index + 2;
 
+  transition: background .3s ease-out, transform .3s ease-out;
+
   width: 100%;
+
+  &--transparent {
+    background: transparent;
+  }
+
+  &--collapsed {
+    transform: translateY(-101%);
+  }
 
   &__container {
     display: flex;
@@ -15,7 +27,7 @@
 
     @extend %padding__default;
     padding-top: 14px;
-    padding-bottom: 0;
+    padding-bottom: 14px;
     // padding: 14px 34px 0;
   }
 
@@ -120,10 +132,6 @@
   }
 
   @media only screen and (min-width: $breakpoint-desktop) {
-    &__container {
-      padding: 14px calc(165 * 100vw / 1440) 0;
-    }
-
     &__deco {
       min-width: 42px;
       width: 42px;
